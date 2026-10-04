@@ -13,8 +13,6 @@ export const todos = todosFromServer.map(todo => ({
   user: getUserById(todo.userId),
 }));
 
-
-
 export const App = () => (
   <div className="App">
     <h1 className="App__title">Static list of todos</h1>

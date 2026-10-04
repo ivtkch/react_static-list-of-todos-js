@@ -1,9 +1,11 @@
 // Add the required props
-import { UserInfo } from "../UserInfo/UserInfo";
+import { UserInfo } from '../UserInfo/UserInfo';
+
 export const TodoInfo = ({ todo }) => {
-  console.log(todo);
   return (
-    <article className={`TodoInfo ${todo.completed ? 'TodoInfo--completed' : ''}`}>
+    <article
+      className={`TodoInfo ${todo.completed ? 'TodoInfo--completed' : ''}`}
+    >
       <h2 className="TodoInfo__title">{todo.title}</h2>
       {todo.user ? <UserInfo user={todo.user} /> : ''}
     </article>
